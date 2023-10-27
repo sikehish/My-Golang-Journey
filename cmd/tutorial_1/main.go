@@ -1,3 +1,5 @@
+// 1. Golang: First program!
+
 package main
 
 import "fmt"

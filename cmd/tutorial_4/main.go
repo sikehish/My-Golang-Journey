@@ -1,3 +1,5 @@
+// 4. Arrays, maps, slices and loops
+
 package main
 
 import "fmt"

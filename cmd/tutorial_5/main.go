@@ -1,4 +1,4 @@
-// Strings, bytes and runes
+// 5. Strings, bytes and runes
 
 package main
 

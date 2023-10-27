@@ -1,3 +1,5 @@
+// 2. Data types, var vs const
+
 package main
 
 import (
