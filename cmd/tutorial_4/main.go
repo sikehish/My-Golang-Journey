@@ -35,13 +35,13 @@ func main(){
 
 
 	//Slices can be created using make function
-	var intSlice2 []int32=make([]int32, 3, 100) //3 is length and 100 is capacity
+	var intSlice3 []int32=make([]int32, 3, 100) //3 is length and 100 is capacity
 
-	fmt.Printf("The length is %v with capacity %v", len(intSlice2), cap(intSlice2))
+	fmt.Printf("The length is %v with capacity %v", len(intSlice3), cap(intSlice3))
 	//Accessing beyond the capacity will not give any errors but it may lead to unexpected results
-	intSlice2 = append(intSlice2, 7)
-	fmt.Printf("The length is %v with capacity %v", len(intSlice2), cap(intSlice2))
-	fmt.Println(intSlice2[4])
+	intSlice3 = append(intSlice3, 7)
+	fmt.Printf("The length is %v with capacity %v", len(intSlice3), cap(intSlice3))
+	fmt.Println(intSlice3[4])
 
 
 	//Array vs Slice
