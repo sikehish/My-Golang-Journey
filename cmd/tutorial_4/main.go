@@ -50,4 +50,57 @@ func main(){
 	//3) Array cant be resized whereas slice can be resized using append function
 
 	//Maps
+	var myMap map[string]uint8 = make(map[string]uint8)
+	fmt.Println(myMap)
+	
+	var myMap2 map[string]uint8 = map[string]uint8{"Adam":23, "Sarah":45}
+	fmt.Println(myMap2["Adam"])
+	fmt.Println(myMap2["Jason"]) //will return 0 as default value of uint8 is 0. Always remember, that accessing keys that arent present will also yield a value, and that is always the default value
+
+	delete(myMap2, "Adam") //deletes by ref and hence doesnt return a new map
+
+	//checking if age exists
+	var age, ok=myMap2["Jason"]
+	if ok{
+		fmt.Printf("The age is %v\n", age)
+	}else{
+		fmt.Println("Invalid Name")
+	}
+
+	//Different types of iterating
+	for name:= range myMap2{
+		fmt.Printf("Name: %v\n",name)
+	}
+
+	for name, age:= range myMap2{
+		fmt.Printf("Name: %v Age: %v\n",name, age)
+	}
+
+	for i,v := range intArr{
+		fmt.Printf("Index: %v, Value: %v \n",i,v)
+	}
+
+	var i int=0
+	for i<10{
+		fmt.Println(i)
+		i+=1
+	}
+
+	// //OR
+	// for true{
+	// 	if i==10{
+	// 		break
+	// 	} 
+	// 	fmt.Println(i)
+	// 	i+=1
+	// }
+
+	// //OR
+	// for i=0; i<10; i++{
+	// 	fmt.Println(i)
+	// }
+
+	//NOTE: Setting capacity ahead of time (preallocation) of a slice is a lot faster(performance/time wise) than letting the capacity update dynamically
+	//Reference: https://www.youtube.com/watch?v=8uiZC0l4Ajw Timestamp: 26:02
+
 }
