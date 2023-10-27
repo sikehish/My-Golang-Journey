@@ -63,3 +63,5 @@ func intDivision(nr int, dr int) (int, int , error) {
 
 	return result, remainder, err
 }
+
+//runes are an alias for int32
